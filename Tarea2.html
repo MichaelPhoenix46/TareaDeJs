@@ -1,0 +1,30 @@
+<html>
+<body>
+
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+
+<form>
+  escribe aqui:<br>
+  <input type="text" id="t1" name="texto para cambiar a otra fuente"><br>
+</form>
+<form>
+  <button type="button" id="b1"">Cambio</button>
+</form>
+
+<p id="p1"> Escribe algo</p>
+
+
+<script>
+$('#b1').on('click', function(e){
+	$("#p1").html($("#t1").val());
+});
+</script>
+
+
+</script>
+
+</body>
+</html>

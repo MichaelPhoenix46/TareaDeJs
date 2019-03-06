@@ -1,0 +1,38 @@
+<html>
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.min.js"
+      integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+      crossorigin="anonymous"></script>
+<body>
+
+<form>
+  escribe aqui:<br>
+  <input type="text" id="t1" name="texto para cambiar a otra fuente"><br>
+</form>
+<form>
+  <button type="button" onclick="changeFont();changeText()">Cambio</button>
+</form>
+
+<p id="p1"> Escribe algo</p>
+<p id="p2"> Y presiona el boton</p>
+<p id="p3"> Para cambiar esto</p>
+
+<script>
+function changeText()
+{
+		document.getElementById('p1').innerHTML = document.getElementById("t1").value;
+		document.getElementById('p2').innerHTML = document.getElementById("t1").value;	
+		document.getElementById('p3').innerHTML = document.getElementById("t1").value;
+}
+
+function changeFont()
+{  
+		document.getElementById("p1").style.fontFamily = "Comic Sans Ms";
+		document.getElementById("p2").style.fontFamily = "Papyrus,fantasy";
+		document.getElementById("p3").style.fontFamily = "wingdings";
+}
+
+</script>
+
+</body>
+</html>
